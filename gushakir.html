@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gushakir</title>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>   
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+<body>
+
+
+
+<div>
+	<label for="guess"></label>
+	<input type="text" name="guess" id="guess">
+	<input type="submit" value="submit"   id="start" />
+</div>
+	<div id="demo"></div>
+<script>
+
+    var int = 1;
+   	  var a = Math.floor(Math.random() * 10 +1);
+
+   document.getElementById("start").onclick = function(){
+     var b = document.getElementById('guess').value;
+
+     if(b == a){
+     	alert("guessed right");
+     	document.write("you guessd" + int+ "times");
+     }
+
+     else if(a > b){
+     	demo.innerHTML = "grt than " +b;
+     	int++;
+     }
+
+     else
+     {
+     demo.innerHTML = "less than "+b ;
+     int++;
+     }
+
+   }		
+  
+
+</script>
+
+
+
+</body>
+</html>
